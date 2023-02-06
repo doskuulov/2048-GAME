@@ -1,0 +1,17 @@
+$box-width: 100px;
+$box-border-width: 4px;
+#app {
+	#matrix {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: calc(4 * (#{$box-width} + 2 * #{$box-border-width}));
+		height: calc(4 * (#{$box-width} + 2 * #{$box-border-width}));
+	}
+
+	.matrix-back-box {
+		width: $box-width;
+		height: $box-width;
+		border-color: red;
+		border: $box-border-width solid black;
+	}
+}
